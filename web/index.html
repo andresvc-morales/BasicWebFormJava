@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Basic Form Week II</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+                min-height: 100vh;
+                font-family: 'DM Sans', sans-serif;
+            }
+            #formContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
+            }
+            #mainForm{
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(240, 240, 240);
+                box-shadow: 0.5rem 0.5rem 0.5rem rgb(110, 99, 99);
+                border-radius: 1rem;
+                width: fit-content;
+                padding: 1rem 2rem 1.5rem 2rem;
+                gap: 0.5rem;
+                
+
+            }
+            .formLabel{
+
+            }
+            .formInput{
+                border: 0;
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
+                border-radius: 1rem;
+            }
+            #buttonContainer{
+                display: flex;
+                align-items: center;
+                padding: 0.5rem;
+                gap: 0.5rem;
+     
+
+            }
+            .formButton{
+                color: white;
+                font-weight: bold;
+                background-color: rgb(14, 14, 14);
+                border: 0;
+                width: 100%;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                border-radius: 1rem;
+            }
+            .formButton:hover{
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0rem 0rem 0.5rem rgb(110, 99, 99);
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="formContainer">
+            <form id="mainForm" action="formServlet">        
+                <h1>Basic Form</h1>
+                <label for="formFirstName">First name</label>
+                <input class="formInput" type="text" maxlength="50" id="formFirstName" name="formFirstName" required>
+
+                <label for="formLastName" class="formLabel">Last name</label>
+                <input class="formInput" type="text" maxlength="50" id="formLastName" name="formLastName" required>
+
+                <label for="formAge" class="formLabel">Age</label>
+                <input class="formInput" type="number" min="1" max="120" id="formAge" name="formAge" required>
+
+                <label for="formEmail" class="formLabel">Email</label>
+                <input class="formInput" type="email" id="formEmail" name="formEmail" required>
+                <div id="buttonContainer">
+                    <button class="formButton" type="reset">Reset</button>
+                    <button class="formButton" type="submit">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
