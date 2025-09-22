@@ -41,7 +41,7 @@ public class formServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>"+ "Hello from asigment week number 2" + "</h1>");
-            out.println("<p>"+ clsProcessor.customeMessage() + "</p>");
+            out.println("<p>"+ clsProcessor.customMessage() + "</p>");
             out.println("</body>");
             out.println("</html>");
         }

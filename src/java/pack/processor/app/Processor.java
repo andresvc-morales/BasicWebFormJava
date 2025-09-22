@@ -19,7 +19,7 @@ public class Processor {
         this.email = email;
     }
     
-    public String customeMessage(){
+    public String customMessage(){
         return "@ProcessorClass: Hello " + this.firstName + " " + this.lastName + " | Age: " + this.age + " "+ "| Email: " + this.email;
                
     }
